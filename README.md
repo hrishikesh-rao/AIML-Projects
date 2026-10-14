@@ -39,10 +39,12 @@ Suppose a given class has not appeared in other category of training data, there
 
 ### **Steps Taken**:
 
--- Dataset used was SMS Spam Collection Dataset
--- The output label is encoded into 0 or 1.
--- Count Vectoriser is used to transform messages into Binary.
--- Class is used to implement NBC.
--- Laplace Smoothening is done
+- Dataset used was SMS Spam Collection Dataset.
+- The output label is encoded into 0 or 1.
+- CountVectorizer is used to transform messages into binary vectors.
+- Class is used to implement NBC.
+- Laplace smoothing is applied.
+- The model is implemented from scratch, and evaluation metrics are computed.
+- These metrics are then compared with Scikit-learn's model using the same data.
 -- The model is implemented form scratch and evaluation metrics are computed
 -- These metrics are then compared with Sklearn's model by importing it and running on the same data.
