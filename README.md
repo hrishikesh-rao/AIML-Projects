@@ -65,7 +65,7 @@ Random Forest is an ensemble machine learning algorithm that combines multiple d
 
 A random forest is much more efficient than a simple decision tree as they employ two main things i.e. bootstrap sampling and random feature selection
 
-Bootstrap sampling: Each tree is trained on a different bootstrap sample of the original training dataset.Bootstrap sampling means randomly selecting training examples with replacement.
+**Bootstrap sampling**: Each tree is trained on a different bootstrap sample of the original training dataset.Bootstrap sampling means randomly selecting training examples with replacement.
 
 Consider Training sample as {A,B,C,D,E}
 
@@ -73,7 +73,7 @@ Tree 1 after Bootstrap sampling : {A,B,B,E,D}\
 Tree 2 after Bootstrap sampling : {C,B,A,E,B}
 and so on
 
-Random feature selection: In a normal decision tree, the root node is determined by the gini entropy if done normally or the id3 method. The features are assigned in the order of correct measurement of samples, similarly the next node is chosen.
+**Random feature selection**: In a normal decision tree, the root node is determined by the gini entropy if done normally or the id3 method. The features are assigned in the order of correct measurement of samples, similarly the next node is chosen.
 
 But here there is no regard given to that entropy score. At each split in a tree, Random Forest considers only a randomly selected subset of the available features rather than necessarily considering all features.
 
