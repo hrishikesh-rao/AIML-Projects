@@ -35,7 +35,7 @@ The assumption is often not perfectly true in real data, but Naive Bayes can sti
 
 #### **Laplace Smoothening** :
 
-Suppose a given class has not appeared in other category of training data, there is a chance of likelihood being equal to zero, that causes a great deal of error, hence laplace smoothening is used.
+Suppose a given class has not appeared in other category of training data, there is a chance of likelihood being equal to zero, that causes a great deal of error, hence laplace smoothening is used, i.e. a small value is added such that the entire probability does not turn zero.
 
 ### **Steps Taken**:
 
