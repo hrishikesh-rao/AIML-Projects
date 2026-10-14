@@ -69,7 +69,7 @@ Bootstrap sampling: Each tree is trained on a different bootstrap sample of the 
 
 Consider Training sample as {A,B,C,D,E}
 
-Tree 1 after Bootstrap sampling : {A,B,B,E,D}
+Tree 1 after Bootstrap sampling : {A,B,B,E,D}\
 Tree 2 after Bootstrap sampling : {C,B,A,E,B}
 and so on
 
