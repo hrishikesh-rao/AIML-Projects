@@ -104,7 +104,7 @@ For one iteration
 
 The process continues until the chosen number of trees is reached or a stopping criterion is satisfied.
 
-Here the Loss Function is MSE
+Here the Loss Function is MSE.\
 It is called gradient boosting as the gradient of the loss function is taken into account.
 
 The gradient is also multiplied with the negative sign.
