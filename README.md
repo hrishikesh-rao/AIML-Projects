@@ -176,3 +176,39 @@ Instead of evaluating on a single train-test split, cross-validation (cv=5) spli
 
 - Iris is quite a simple dataset to observe Hyper Parameter tuning hence both the baseline and tuned test accuracy are 1.
 - If a more complex dataset were to be chosen, then a marginal difference could be ibserved.
+---
+
+# Task 4: Image Clustering Using K-Means
+
+## Aim:
+
+To apply unsupervised learning techniques on image data using K-Means clustering and evaluate how well the clusters correspond to actual digit classes.
+
+## Learnings:
+
+### K-Means Clustering:
+
+K-Means is an unsupervised machine learning algorithm that groups data into k clusters based on similarity. It works by assigning each data point to the nearest cluster centroid using Euclidean distance, then updating the centroid to the mean of all points in that cluster. This repeats until the assignments stabilize.
+
+
+### Cluster Centroids:
+
+When a cluster is created, the centroid of that cluster is found by taking the mean of that cluster. Then the cluster is reformed by calculating the distance of a point from that cluster.
+
+### Euclidean Distance:
+
+K-Means uses Euclidean distance to measure similarity between data points and centroids.It is the same distance between two points in cartesian coordinate systems.
+
+### Clustering vs Classification:
+
+K-Means assigns cluster numbers arbitrarily — cluster 3 may correspond to digit 7. A label mapping step is needed to align cluster assignments with true digit labels before computing accuracy.
+
+
+### Steps Taken:
+
+- The MNIST handwritten digits dataset (70,000 images) is loaded via `fetch_openml`.  
+- Images are already flattened to 784 features; pixel values are normalized by dividing by 255.  
+- K-Means is applied with 10 clusters corresponding to the 10 digits.  
+- Cluster centroids are visualized as 28×28 images to interpret what each cluster represents.  
+- Cluster assignments are mapped to true digit labels and accuracy is computed.  
+- Sample images per digit are inspected to understand intra-class variation.
