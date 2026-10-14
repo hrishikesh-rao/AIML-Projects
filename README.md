@@ -166,10 +166,10 @@ Instead of evaluating on a single train-test split, cross-validation (cv=5) spli
 ## Steps Taken:
 
 - Iris dataset is loaded from sklearn and converted to a DataFrame
-- Random Forest classifier is trained with default parameters as the baseline\n
- n_estimators — number of trees in the forest\n
- max_depth — how deep each tree can grow\n
- min_samples_split — minimum samples required to split a node\n
+- Random Forest classifier is trained with default parameters as the baseline\
+ n_estimators — number of trees in the forest\
+ max_depth — how deep each tree can grow\
+ min_samples_split — minimum samples required to split a node\
 - Grid Search is run over n_estimators, max_depth, and min_samples_split
 - Best configuration found: max_depth=None, min_samples_split=2, n_estimators=200 with a CV accuracy of 0.95
 - Baseline and tuned test accuracy were both 1.0 — Iris is too simple a dataset to reflect tuning impact on the test set, though cross-validation scores showed variation (0.941 → 0.95)
