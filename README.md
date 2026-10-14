@@ -100,7 +100,7 @@ The mathematical model is stated below
 
 For one iteration 
 
-https://github.com/hrishikesh-rao/task/commit/294edb2f1f1e104f9ee9fbcafda9bbbca1d74b51
+![](https://github.com/hrishikesh-rao/task/blob/main/Screenshot%202026-10-11%20190943.png?raw=true)
 
 The process continues until the chosen number of trees is reached or a stopping criterion is satisfied.
 
